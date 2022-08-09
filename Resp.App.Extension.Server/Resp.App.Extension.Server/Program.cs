@@ -2,7 +2,16 @@ using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
+// IIS Host
 var builder = WebApplication.CreateBuilder(args);
+
+// Windows Service Host
+//var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+//{
+//    ContentRootPath = AppContext.BaseDirectory
+//});
+
+//builder.Host.UseWindowsService();
 
 builder.Services.AddControllers().AddJsonOptions(opts =>
 {
