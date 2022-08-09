@@ -32,6 +32,6 @@ if (app.Environment.IsDevelopment())
 //app.UseHttpsRedirection();
 
 app.MapControllers();
-app.MapGet("/", () => "Welcome to RESP.app Extension Server base on .NET 6.0");
+app.MapGet("/", () => "Welcome to RESP.App Extension Server base on .NET 6.0");
 
 app.Run();
